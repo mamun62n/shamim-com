@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/7e64cda0c2.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            max-width: 100%;
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('images/com-font.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(5px);
+        }
+
+        #contact {
+            width: 100%;
+            height: 80vh;
+            padding: 0 8%;
+            display: flex;
+            flex-flow: wrap row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+       .form-con form {
+            height: auto;
+            margin: auto;
+            padding: 20px 30px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        form h2{
+            text-align: center;
+        }
+        
+        .name-phone {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        ::placeholder{
+            color: #fff;
+        }
+
+
+        #name,
+        #number {
+            width: 49%;
+            background: none;
+            color: #fff;
+        }
+        
+        #email,
+        #text-area,
+        #btn {
+            width: 100%;
+            display: block;
+            background: none;
+            color: #fff;
+        }
+
+        #btn {
+            border: 1px solid rgba(128, 128, 128, 0.5);
+            border-radius: 5px;
+            padding: 0.5rem;
+            text-align: center;
+            transition: 0.5s;
+            color: #fff;
+        }
+
+        #btn:hover {
+            background: #ed563b;
+        }
+
+        input,
+        #text-area {
+            padding: 15px 10px;
+            margin: 10px 0;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+            outline: none;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        input:focus,
+        form #text-area:focus {
+            border: 1px solid #ed563b;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-area">
+        <div class="nav-list">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><i class="fa-solid fa-computer"></i> <span>SM</span></a>
+                </div>
+
+                <nav>
+                    <input type="checkbox" name="click" id="click">
+                    <label for="click" class="navbtn"> <i class="fa-solid fa-bars-staggered"></i></label>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li></ul>
+                </nav>
+            </div>
+            <!-- navbar-end -->
+        </div>
+    </div>
+    <!-- header-area-end -->
+
+
+
+
+
+    <div id="contact">
+        <div class="form-con">
+
+            <form>
+                   <h2>Contact Us</h2>
+                <div class="name-phone">
+                    <input type="text" name="name" id="name" placeholder="Your Name*" required autofocus>
+                    <input type="text" id="number" placeholder="Phone No.">
+                </div>
+                <input type="text" name="email" id="email" placeholder="Your Email*" required>
+
+                <textarea name="" id="text-area" cols="60" rows="9" placeholder="Massage....."></textarea> <br>
+
+                <a href="#" id="btn">SEND MASSAGE</a>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-heading">
+                <h1>শামীম কম্পিউটার প্রশিক্ষণ কেন্দ্র</h1>
+                <p>বাংলাদেশ কারিগরি শিক্ষা বাের্ডের সিলেবাস অনুসারে কোর্স  সম্পাদন ।
+                    উপজেলা গেট ও রেলবাজার, চাটমােহর, পাবনা। <br>
+                    যোগাযোগ-- ০১৭১৩৭৩৮০৫৯, (চাটমােহর) ০১৭৩০৬৩৩৭৩৩ (রেলবাজার)। <br>
+                    ৩ মাস ও ৬ মাস মেয়াদি কোর্সে ভর্তি চলছে।
+                    বাংলা ও ইংরেজি। </p>
+            </div>
+            <div class="footer-soicial-icon">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://plus.google.com/" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="footer-link">
+                <div class="copyright">
+                    <span>Copyright @2022 Shamim-com</span>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#main-content">Why Learn?</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- footer-content-end -->
+    </footer>
+
+
+
+</body>
+
+</html>
